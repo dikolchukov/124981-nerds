@@ -7,7 +7,7 @@
   <body>
     <header class="main-header">
       <div class="container">
-        <a class="logo" href="#"><img src="#" alt="Nerds-logo"></a>
+        <a href="#" class="logo"><img src="#" alt="Nerds-logo"></a>
         <nav class="main-nav">
           <ul>
             <li>
@@ -17,7 +17,7 @@
               <a href="#">Клиенты</a>
             </li>
             <li>
-              <a href="#">Магазин</a>
+              <a href="nerds-catalog.html">Магазин</a>
             </li>
             <li>
               <a href="#">Контакты</a>
@@ -25,18 +25,18 @@
           </ul>
         </nav>
         <div class="cart-block">
-          <a class="cart" href="#">Корзина</a>
+          <a href="#" class="cart">Корзина</a>
         </div>
         <h1>Магазин готовых шаблонов</h1>
       </div>
     </header>
     <main class="container">
-      <form action="#" method="get">
+      <form class="filters" action="#" method="get">
         <div class="filter-price">
           <h2>Стоимость:</h2>
           <input type="range" min="0" max="15000">
         </div>
-        <div class="grid">
+        <div class="filter-grid">
           <h2>Сетка:</h2>
           <label>
             <input type="radio" name="grid-select" value="adapt" checked> Адаптивная
@@ -135,12 +135,15 @@
           </li>
         </ul>
       </nav>
+      <div class="map">
+        <img src="#" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+      </div>
       <section class="contacts">
           <h2 class="contacts-title">NЁRDS DESIGN STUDIO</h2>
           <p>191186, Санкт-Петербург,<br>
           ул. Б. Конюшенная, д. 19/8</p>
           <p>тел. +7 (812) 275-75-75</p>
-          <a class="button contact-us" href="#">Напишите нам</a>
+          <button class="button contact-us" type="button">Напишите нам</button>
           <form class="form-contact" action="#" method="post">
             <h2>Напишите нам</h2>
             <button class="close" type="button">Закрыть</button>
@@ -156,16 +159,16 @@
               Текст письма:
               <textarea name="mail-content">В свободной форме</textarea>
             </label>
-            <input class="button send-it" type="submit" value="Отправить">
+            <button class="button send-it" type="button">Отправить</button> <!-- Если это кнопка, то нужна ли здесь форма? -->
           </form>
       </section>
     </main>
     <footer class="main-footer">
       <div class="container">
         <section class="footer-social">
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+          <a href="#" class="social-btn social-btn-vk">Вконтакте</a>
+          <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
+          <a href="#" class="social-btn social-btn-inst">Инстаграм</a>
         </section>
         <section class="footer-friends">
           <h2 class="friends-item">Давайте дружить, это выгодно!</h2>
