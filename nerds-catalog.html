@@ -7,8 +7,8 @@
   <body>
     <header class="main-header">
       <div class="container">
-        <a href="#" class="logo"><img src="#" alt="Nerds-logo"></a>
-        <nav class="main-nav">
+        <a href="index.html"><img class="logo" src="#" alt="Нёрдс"></a>
+        <nav class="main-menu">
           <ul>
             <li>
               <a href="#">Студия</a>
@@ -49,7 +49,7 @@
           </label>
         </div>
         <div class="filter-features">
-          <h2>Особенности</h2>
+          <h2>Особенности:</h2>
           <label>
             <input type="checkbox" name="slider" checked> Слайдер
           </label>
@@ -60,7 +60,7 @@
             <input type="checkbox" name="news" checked> Новости
           </label>
           <label>
-            <input type="checkbox" name="galleryr"> Галерея
+            <input type="checkbox" name="gallery"> Галерея
           </label>
           <label>
             <input type="checkbox" name="cart"> Корзина
@@ -68,14 +68,21 @@
         </div>
         <button class="button show-it" type="submit">Показать</button>
       </form>
-      <!-- Я не знаю как размечать раздел сортировки -->
+      <div class="sort">
+        <h2>Сортировать:</h2>
+        <button class="sort-btn by-price" type="button">По цене</button>
+        <button class="sort-btn by-type" type="button">По типу</button>
+        <button class="sort-btn by-title" type="button">По названию</button>
+        <button class="btn-decrease" type="button">По убыванию</button>
+        <button class="btn-increase" type="button">По возрастанию</button>
+      </div>
       <section class="catalog">
         <article class="catalog-item">
           <a href="#"><img src="#" alt="Sedona"></a>
           <div class="catalog-item-hover">
             <h2 class="catalog-item-title"><a href="#">Sedona</a></h2>
             <p class="catalog-item-discr">Информационый сайт для туристов</p>
-            <button class="button buy-it">9 900 руб.</button>
+            <button class="button buy-it" type="button">9 900 руб.</button>
           </div>
         </article>
         <article class="catalog-item">
@@ -83,7 +90,7 @@
           <div class="catalog-item-hover">
             <h2 class="catalog-item-title"><a href="#">Pink App</a></h2>
             <p class="catalog-item-discr">Продуктовый лендинг приложения для iOS и Android</p>
-            <button class="button buy-it">9 900 руб.</button>
+            <button class="button buy-it" type="button">9 900 руб.</button>
           </div>
         </article>
         <article class="catalog-item">
@@ -91,7 +98,7 @@
           <div class="catalog-item-hover">
             <h2 class="catalog-item-title"><a href="#">Barbershop</a></h2>
             <p class="catalog-item-discr">Сайт салоны красоты. Для мужчин, да.</p>
-            <button class="button buy-it">9 900 руб.</button>
+            <button class="button buy-it" type="button">9 900 руб.</button>
           </div>
         </article>
         <article class="catalog-item">
@@ -99,7 +106,7 @@
           <div class="catalog-item-hover">
             <h2 class="catalog-item-title"><a href="#">Mishka</a></h2>
             <p class="catalog-item-discr">Интернет-магазин вязаных игрушек</p>
-            <button class="button buy-it">9 900 руб.</button>
+            <button class="button buy-it" type="button">9 900 руб.</button>
           </div>
         </article>
         <article class="catalog-item">
@@ -107,7 +114,7 @@
           <div class="catalog-item-hover">
             <h2 class="catalog-item-title"><a href="#">A Plus</a></h2>
             <p class="catalog-item-discr">Лендинг курсов повышения квалификации</p>
-            <button class="button buy-it">9 900 руб.</button>
+            <button class="button buy-it" type="button">9 900 руб.</button>
           </div>
         </article>
         <article class="catalog-item">
@@ -115,7 +122,7 @@
           <div class="catalog-item-hover">
             <h2 class="catalog-item-title"><a href="#">Кваст</a></h2>
             <p class="catalog-item-discr">Промо-сайт производителя крафтового кваса</p>
-            <button class="button buy-it">9 900 руб.</button>
+            <button class="button buy-it" type="button">9 900 руб.</button>
           </div>
         </article>
       </section>
@@ -159,7 +166,7 @@
               Текст письма:
               <textarea name="mail-content">В свободной форме</textarea>
             </label>
-            <button class="button send-it" type="button">Отправить</button> <!-- Если это кнопка, то нужна ли здесь форма? -->
+            <button class="button send-it" type="button">Отправить</button>
           </form>
       </section>
     </main>
