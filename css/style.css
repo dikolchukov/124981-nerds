@@ -19,3 +19,151 @@ body {
   font-weight: 700;
   color: #000000;
 }
+
+.main-header {
+  background-color: #000000;
+  margin-bottom: 111px;
+}
+
+.container {
+  width: 1160px;
+  padding: 0 20px;
+  background-color: red;
+  margin: 0 auto;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  width: 160px;
+  height: 65px;
+  background-color: #249fc3;
+  margin-right: 40px;
+}
+
+.main-menu {
+  float: left;
+  width: 760px;
+  background-color: #1dca21;
+}
+
+.cart-block {
+  float: right;
+  width: 160px;
+  background-color: #d6d421;
+}
+
+.slider {
+  width: 1160px;
+  background-color: #d6d421;
+  clear: both;
+}
+
+.slider-item {
+  width: 560px;
+  background-color: #ec902c;
+}
+
+.know-more {
+  width: 240px;
+  background-color: #1dca21;
+}
+
+.slider-indicator {
+  margin: 0 auto;
+  background-color: #1dca21;
+  width: 89px;
+}
+
+.features {
+  background-color: #d6d421;
+  margin-bottom: 122px;
+}
+
+.feature-item {
+  float: left;
+  width: 300px;
+  background-color: #1dca21;
+  margin-right: 100px;
+}
+
+.feature-item:last-child {
+  margin-right: 0;
+}
+
+.index-content {
+  background-color: #d6d421;
+  margin-bottom: 144px;
+}
+
+.index-content-left {
+  float: left;
+  width: 660px;
+  background-color: #1dca21;
+}
+
+.advantages-list {
+  float: right;
+  width: 360px;
+  background-color: #1dca21;
+}
+
+.partners {
+  background-color: #d6d421;
+  font-size: 0;
+  margin-bottom: 126px;
+}
+
+.partners a {
+  display: inline-block;
+  background-color: #1dca21;
+  width: 260px;
+  margin-right: 40px;
+  font-size: 16px;
+  vertical-align: middle;
+}
+
+.partners a:last-child {
+  margin-right: 0;
+}
+
+.contacts {
+  background-color: #d6d421;
+}
+
+.contacts-field {
+  float: left;
+  width: 318px;
+  background-color: #1dca21;
+}
+
+.form-contact {
+  width: 960px;
+  background-color: #249fc3;
+  margin: 0 auto;
+  clear: both;
+}
+
+.main-footer {
+  background-color: #000000;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.footer-social {
+  float: left;
+  width: 260px;
+  background-color: #1dca21;
+  margin-right: 140px;
+}
+
+.footer-friends {
+  float: left;
+  width: 560px;
+  background-color: #1dca21;
+}
