@@ -113,10 +113,16 @@ body {
   background-color: #1dca21;
 }
 
+.map {
+  margin: 0 auto;
+  width: 1440px;
+  height: 416px;
+}
+
 .partners {
   background-color: #d6d421;
   font-size: 0;
-  margin-bottom: 126px;
+  margin-bottom: 125px;
 }
 
 .partners a {
@@ -166,4 +172,88 @@ body {
   float: left;
   width: 560px;
   background-color: #1dca21;
+}
+
+.above-map {
+  padding-bottom: 1px;
+}
+
+.hidden-ellement {
+  visibility: hidden;
+}
+
+.catalog-title {
+  clear: both;
+  background-color: #d6d421;
+  width: 840px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  background-color: #453a3a;
+}
+
+.catalog-left-column {
+  float: left;
+  width: 300px;
+  background-color: #eb7c23;
+}
+
+.catalog-right-column {
+  float: right;
+  width: 760px;
+  background-color: #eb7c23;
+}
+
+.filters {
+  background-color: #1dca21;
+ }
+
+.sort {
+  background-color: #1dca21;
+  margin-bottom: 34px;
+ }
+
+.sort h2 {
+  float: left;
+  width: 200px;
+  background-color: #249fc3;
+ }
+
+.sort-nav {
+  float: right;
+  width: 500px;
+  background-color: #249fc3;
+}
+
+.catalog {
+  width: 760px;
+  background-color: #d6d421;
+  margin-bottom: 60px;
+}
+
+.catalog-item {
+  float: left;
+  background-color: #1dca21;
+  width: 360px;
+  margin-right: 40px;
+  margin-bottom: 36px;
+}
+
+.catalog-item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.catalog-item:nth-child(5),
+.catalog-item:nth-child(6) {
+  margin-bottom: 0;
+}
+
+.catalog-item-hover {
+  background-color: #249fc3;
+}
+
+.pages{
+  background-color: #1dca21;
+  width: 460px;
 }

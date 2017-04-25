@@ -7,7 +7,7 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
+      <div class="container clearfix">
         <a href="index.html"><img class="logo" src="img/logo.png" alt="Нёрдс"></a>
         <nav class="main-menu">
           <ul>
@@ -28,131 +28,160 @@
         <div class="cart-block">
           <a href="#" class="cart">Корзина</a>
         </div>
-        <h1>Магазин готовых шаблонов</h1>
+        <h1 class="catalog-title">Магазин готовых шаблонов</h1>
       </div>
     </header>
-    <main class="container">
-      <form class="filters" action="#" method="get">
-        <div class="filter-price">
-          <h2>Стоимость:</h2>
-          <input type="range" min="0" max="15000">
+    <main>
+      <div class="container">
+        <div class="wrapper clearfix">
+          <div class="catalog-left-column">
+            <form class="filters" action="#" method="get">
+              <div class="filter-price">
+                <h2>Стоимость:</h2>
+                <input type="range" min="0" max="15000">
+              </div>
+              <div class="filter-grid">
+                <h2>Сетка:</h2>
+                <p>
+                  <label>
+                    <input type="radio" name="grid-select" value="adapt" checked> Адаптивная
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="radio" name="grid-select" value="fix"> Фиксированная
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="radio" name="grid-select" value="rub"> Резиновая
+                  </label>
+                </p>
+              </div>
+              <div class="filter-features">
+                <h2>Особенности:</h2>
+                <p>
+                  <label>
+                    <input type="checkbox" name="slider" checked> Слайдер
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="checkbox" name="features-block"> Блок преимуществ
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="checkbox" name="news" checked> Новости
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="checkbox" name="gallery"> Галерея
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="checkbox" name="cart"> Корзина
+                  </label>
+                </p>
+              </div>
+              <button class="button show-it" type="submit">Показать</button>
+            </form>
+          </div>
+          <div class="catalog-right-column">
+            <div class="sort clearfix">
+              <h2>Сортировать:</h2>
+              <div class="sort-nav">
+                <button class="sort-btn by-price" type="button">По цене</button>
+                <button class="sort-btn by-type" type="button">По типу</button>
+                <button class="sort-btn by-title" type="button">По названию</button>
+                <button class="btn-decrease" type="button">По убыванию</button>
+                <button class="btn-increase" type="button">По возрастанию</button>
+              </div>
+            </div>
+            <section class="catalog clearfix">
+              <article class="catalog-item">
+                <a href="#"><img src="img/img-sedona.jpg" alt="Sedona"></a>
+                <div class="catalog-item-hover">
+                  <h2 class="catalog-item-title"><a href="#">Sedona</a></h2>
+                  <p class="catalog-item-discr">Информационый сайт для туристов</p>
+                  <button class="button buy-it" type="button">9 900 руб.</button>
+                </div>
+              </article>
+              <article class="catalog-item">
+                <a href="#"><img src="img/img-pink.jpg" alt="Pink"></a>
+                <div class="catalog-item-hover ">
+                  <h2 class="catalog-item-title"><a href="#">Pink App</a></h2>
+                  <p class="catalog-item-discr">Продуктовый лендинг приложения для iOS и Android</p>
+                  <button class="button buy-it" type="button">9 900 руб.</button>
+                </div>
+              </article>
+              <article class="catalog-item">
+                <a href="#"><img src="img/img-barbershop.jpg" alt="Barbershop"></a>
+                <div class="catalog-item-hover">
+                  <h2 class="catalog-item-title"><a href="#">Barbershop</a></h2>
+                  <p class="catalog-item-discr">Сайт салоны красоты. Для мужчин, да.</p>
+                  <button class="button buy-it" type="button">9 900 руб.</button>
+                </div>
+              </article>
+              <article class="catalog-item">
+                <a href="#"><img src="img/img-mishka.jpg" alt="Mishka"></a>
+                <div class="catalog-item-hover">
+                  <h2 class="catalog-item-title"><a href="#">Mishka</a></h2>
+                  <p class="catalog-item-discr">Интернет-магазин вязаных игрушек</p>
+                  <button class="button buy-it" type="button">9 900 руб.</button>
+                </div>
+              </article>
+              <article class="catalog-item">
+                <a href="#"><img src="img/img-aplus.jpg" alt="A Plus"></a>
+                <div class="catalog-item-hover">
+                  <h2 class="catalog-item-title"><a href="#">A Plus</a></h2>
+                  <p class="catalog-item-discr">Лендинг курсов повышения квалификации</p>
+                  <button class="button buy-it" type="button">9 900 руб.</button>
+                </div>
+              </article>
+              <article class="catalog-item">
+                <a href="#"><img src="img/img-kvast.jpg" alt="Кваст"></a>
+                <div class="catalog-item-hover">
+                  <h2 class="catalog-item-title"><a href="#">Кваст</a></h2>
+                  <p class="catalog-item-discr">Промо-сайт производителя крафтового кваса</p>
+                  <button class="button buy-it" type="button">9 900 руб.</button>
+                </div>
+              </article>
+            </section>
+            <nav class="pages">
+              <ul>
+                <li>
+                  <a class="page-btn" href="#">1</a>
+                </li>
+                <li>
+                  <a class="page-btn" href="#">2</a>
+                </li>
+                <li>
+                  <a class="page-btn" href="#">3</a>
+                </li>
+                <li>
+                  <a class="page-btn-next" href="#">Следующая</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
-        <div class="filter-grid">
-          <h2>Сетка:</h2>
-          <label>
-            <input type="radio" name="grid-select" value="adapt" checked> Адаптивная
-          </label>
-          <label>
-            <input type="radio" name="grid-select" value="fix"> Фиксированная
-          </label>
-          <label>
-            <input type="radio" name="grid-select" value="rub"> Резиновая
-          </label>
-        </div>
-        <div class="filter-features">
-          <h2>Особенности:</h2>
-          <label>
-            <input type="checkbox" name="slider" checked> Слайдер
-          </label>
-          <label>
-            <input type="checkbox" name="features-block"> Блок преимуществ
-          </label>
-          <label>
-            <input type="checkbox" name="news" checked> Новости
-          </label>
-          <label>
-            <input type="checkbox" name="gallery"> Галерея
-          </label>
-          <label>
-            <input type="checkbox" name="cart"> Корзина
-          </label>
-        </div>
-        <button class="button show-it" type="submit">Показать</button>
-      </form>
-      <div class="sort">
-        <h2>Сортировать:</h2>
-        <button class="sort-btn by-price" type="button">По цене</button>
-        <button class="sort-btn by-type" type="button">По типу</button>
-        <button class="sort-btn by-title" type="button">По названию</button>
-        <button class="btn-decrease" type="button">По убыванию</button>
-        <button class="btn-increase" type="button">По возрастанию</button>
       </div>
-      <section class="catalog">
-        <article class="catalog-item">
-          <a href="#"><img src="img/img-sedona.jpg" alt="Sedona"></a>
-          <div class="catalog-item-hover">
-            <h2 class="catalog-item-title"><a href="#">Sedona</a></h2>
-            <p class="catalog-item-discr">Информационый сайт для туристов</p>
-            <button class="button buy-it" type="button">9 900 руб.</button>
-          </div>
-        </article>
-        <article class="catalog-item">
-          <a href="#"><img src="img/img-pink.jpg" alt="Pink"></a>
-          <div class="catalog-item-hover">
-            <h2 class="catalog-item-title"><a href="#">Pink App</a></h2>
-            <p class="catalog-item-discr">Продуктовый лендинг приложения для iOS и Android</p>
-            <button class="button buy-it" type="button">9 900 руб.</button>
-          </div>
-        </article>
-        <article class="catalog-item">
-          <a href="#"><img src="img/img-barbershop.jpg" alt="Barbershop"></a>
-          <div class="catalog-item-hover">
-            <h2 class="catalog-item-title"><a href="#">Barbershop</a></h2>
-            <p class="catalog-item-discr">Сайт салоны красоты. Для мужчин, да.</p>
-            <button class="button buy-it" type="button">9 900 руб.</button>
-          </div>
-        </article>
-        <article class="catalog-item">
-          <a href="#"><img src="img/img-mishka.jpg" alt="Mishka"></a>
-          <div class="catalog-item-hover">
-            <h2 class="catalog-item-title"><a href="#">Mishka</a></h2>
-            <p class="catalog-item-discr">Интернет-магазин вязаных игрушек</p>
-            <button class="button buy-it" type="button">9 900 руб.</button>
-          </div>
-        </article>
-        <article class="catalog-item">
-          <a href="#"><img src="img/img-aplus.jpg" alt="A Plus"></a>
-          <div class="catalog-item-hover">
-            <h2 class="catalog-item-title"><a href="#">A Plus</a></h2>
-            <p class="catalog-item-discr">Лендинг курсов повышения квалификации</p>
-            <button class="button buy-it" type="button">9 900 руб.</button>
-          </div>
-        </article>
-        <article class="catalog-item">
-          <a href="#"><img src="img/img-kvast.jpg" alt="Кваст"></a>
-          <div class="catalog-item-hover">
-            <h2 class="catalog-item-title"><a href="#">Кваст</a></h2>
-            <p class="catalog-item-discr">Промо-сайт производителя крафтового кваса</p>
-            <button class="button buy-it" type="button">9 900 руб.</button>
-          </div>
-        </article>
-      </section>
-      <nav class="pages">
-        <ul>
-          <li>
-            <a class="page-btn" href="#">1</a>
-          </li>
-          <li>
-            <a class="page-btn" href="#">2</a>
-          </li>
-          <li>
-            <a class="page-btn" href="#">3</a>
-          </li>
-          <li>
-            <a class="page-btn-next" href="#">Следующая</a>
-          </li>
-        </ul>
-      </nav>
       <div class="map">
         <img src="img/map.jpg" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
       </div>
-      <section class="contacts">
-          <h2 class="contacts-title">Nerds design studio</h2>
-          <p>191186, Санкт-Петербург,<br>
-          ул. Б. Конюшенная, д. 19/8</p>
-          <p>тел. +7 (812) 275-75-75</p>
-          <button class="button contact-us" type="button">Напишите нам</button>
-          <form class="form-contact" action="#" method="post">
+      <div class="container">
+        <section class="contacts">
+          <div class="contacts-field">
+            <h2 class="contacts-title">Nerds design studio</h2>
+            <p>191186, Санкт-Петербург,<br>
+            ул. Б. Конюшенная, д. 19/8</p>
+            <p>тел. +7 (812) 275-75-75</p>
+            <button class="button contact-us" type="button">Напишите нам</button>
+          </div>
+          <form class="form-contact hidden-ellement" action="#" method="post">
             <h2>Напишите нам</h2>
             <button class="close" type="button">Закрыть</button>
             <label>
@@ -169,10 +198,11 @@
             </label>
             <button class="button send-it" type="button">Отправить</button>
           </form>
-      </section>
+        </section>
+      </div>
     </main>
     <footer class="main-footer">
-      <div class="container">
+      <div class="container clearfix">
         <section class="footer-social">
           <a href="#" class="social-btn social-btn-vk">Вконтакте</a>
           <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
