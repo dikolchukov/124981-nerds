@@ -123,7 +123,7 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   background-color: #d6d421;
   margin-bottom: 125px;
@@ -132,6 +132,11 @@ body {
 .partners a {
   background-color: #1dca21;
   width: 260px;
+  margin-right: 40px;
+}
+
+.partners a:nth-child(4n) {
+    margin-right: 0;
 }
 
 .partners a:last-child {
