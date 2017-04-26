@@ -120,18 +120,18 @@ body {
 }
 
 .partners {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   background-color: #d6d421;
-  font-size: 0;
   margin-bottom: 125px;
 }
 
 .partners a {
-  display: inline-block;
   background-color: #1dca21;
   width: 260px;
-  margin-right: 40px;
-  font-size: 16px;
-  vertical-align: middle;
 }
 
 .partners a:last-child {
@@ -244,8 +244,8 @@ body {
   margin-right: 0;
 }
 
-.catalog-item:nth-child(5),
-.catalog-item:nth-child(6) {
+.catalog-item:nth-last-child(2),
+.catalog-item:last-child {
   margin-bottom: 0;
 }
 
