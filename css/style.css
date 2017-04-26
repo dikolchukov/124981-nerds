@@ -133,14 +133,18 @@ body {
   background-color: #1dca21;
   width: 260px;
   margin-right: 40px;
+  margin-bottom: 5px;
 }
 
 .partners a:nth-child(4n) {
     margin-right: 0;
 }
 
+.partners a:nth-last-child(2),
+.partners a:nth-last-child(3),
+.partners a:nth-last-child(4),
 .partners a:last-child {
-  margin-right: 0;
+  margin-bottom: 0;
 }
 
 .contacts {
