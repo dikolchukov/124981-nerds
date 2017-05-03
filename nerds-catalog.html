@@ -28,7 +28,7 @@
         <div class="cart-block">
           <a href="#" class="cart">Корзина</a>
         </div>
-        <h1 class="catalog-title">Магазин готовых шаблонов</h1>
+        <h1>Магазин готовых шаблонов</h1>
       </div>
     </header>
     <main>
@@ -96,15 +96,15 @@
                 <button class="sort-btn by-price" type="button">По цене</button>
                 <button class="sort-btn by-type" type="button">По типу</button>
                 <button class="sort-btn by-title" type="button">По названию</button>
-                <button class="btn-decrease" type="button">По убыванию</button>
-                <button class="btn-increase" type="button">По возрастанию</button>
+                <button class="sort-btn btn-decrease" type="button">По убыванию</button>
+                <button class="sort-btn btn-increase" type="button">По возрастанию</button>
               </div>
             </div>
             <section class="catalog clearfix">
               <article class="catalog-item">
-                <a href="#"><img src="img/img-sedona.jpg" alt="Sedona"></a>
+                <a href="#"><img src="img/img-sedona.jpg" alt="Sedona" width="360" height="576"></a>
                 <div class="catalog-item-hover">
-                  <h2 class="catalog-item-title"><a href="#">Sedona</a></h2>
+                  <h2><a href="#">Sedona</a></h2>
                   <p class="catalog-item-discr">Информационый сайт для туристов</p>
                   <button class="button buy-it" type="button">9 900 руб.</button>
                 </div>
@@ -112,7 +112,7 @@
               <article class="catalog-item">
                 <a href="#"><img src="img/img-pink.jpg" alt="Pink"></a>
                 <div class="catalog-item-hover ">
-                  <h2 class="catalog-item-title"><a href="#">Pink App</a></h2>
+                  <h2><a href="#">Pink App</a></h2>
                   <p class="catalog-item-discr">Продуктовый лендинг приложения для iOS и Android</p>
                   <button class="button buy-it" type="button">9 900 руб.</button>
                 </div>
@@ -120,7 +120,7 @@
               <article class="catalog-item">
                 <a href="#"><img src="img/img-barbershop.jpg" alt="Barbershop"></a>
                 <div class="catalog-item-hover">
-                  <h2 class="catalog-item-title"><a href="#">Barbershop</a></h2>
+                  <h2><a href="#">Barbershop</a></h2>
                   <p class="catalog-item-discr">Сайт салоны красоты. Для мужчин, да.</p>
                   <button class="button buy-it" type="button">9 900 руб.</button>
                 </div>
@@ -128,7 +128,7 @@
               <article class="catalog-item">
                 <a href="#"><img src="img/img-mishka.jpg" alt="Mishka"></a>
                 <div class="catalog-item-hover">
-                  <h2 class="catalog-item-title"><a href="#">Mishka</a></h2>
+                  <h2><a href="#">Mishka</a></h2>
                   <p class="catalog-item-discr">Интернет-магазин вязаных игрушек</p>
                   <button class="button buy-it" type="button">9 900 руб.</button>
                 </div>
@@ -136,7 +136,7 @@
               <article class="catalog-item">
                 <a href="#"><img src="img/img-aplus.jpg" alt="A Plus"></a>
                 <div class="catalog-item-hover">
-                  <h2 class="catalog-item-title"><a href="#">A Plus</a></h2>
+                  <h2><a href="#">A Plus</a></h2>
                   <p class="catalog-item-discr">Лендинг курсов повышения квалификации</p>
                   <button class="button buy-it" type="button">9 900 руб.</button>
                 </div>
@@ -144,7 +144,7 @@
               <article class="catalog-item">
                 <a href="#"><img src="img/img-kvast.jpg" alt="Кваст"></a>
                 <div class="catalog-item-hover">
-                  <h2 class="catalog-item-title"><a href="#">Кваст</a></h2>
+                  <h2><a href="#">Кваст</a></h2>
                   <p class="catalog-item-discr">Промо-сайт производителя крафтового кваса</p>
                   <button class="button buy-it" type="button">9 900 руб.</button>
                 </div>
@@ -171,19 +171,17 @@
       </div>
       <div class="map">
         <img src="img/map.jpg" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+        <div class="contacts-field">
+          <h2>Nёrds design studio</h2>
+          <p>191186, Санкт-Петербург,<br>
+        ул. Б. Конюшенная, д. 19/8</p>
+          <p>тел. +7 (812) 275-75-75</p>
+          <button class="button contact-us" type="button">Напишите нам</button>
+        </div>
       </div>
-      <div class="container">
-        <section class="contacts">
-          <div class="contacts-field">
-            <h2 class="contacts-title">Nerds design studio</h2>
-            <p>191186, Санкт-Петербург,<br>
-            ул. Б. Конюшенная, д. 19/8</p>
-            <p>тел. +7 (812) 275-75-75</p>
-            <button class="button contact-us" type="button">Напишите нам</button>
-          </div>
-          <form class="form-contact hidden-ellement" action="#" method="post">
+      <!--<form class="form-contact hidden-ellement" action="#" method="post">
             <h2>Напишите нам</h2>
-            <button class="close" type="button">Закрыть</button>
+            <button class="close-btn" type="button">Закрыть</button>
             <label>
               Ваше имя:
               <input name="your-name" type="text" value="Представьтесь, пожалуйста">
@@ -199,7 +197,7 @@
             <button class="button send-it" type="button">Отправить</button>
           </form>
         </section>
-      </div>
+      </div> -->
     </main>
     <footer class="main-footer">
       <div class="container clearfix">
@@ -209,7 +207,7 @@
           <a href="#" class="social-btn social-btn-inst">Инстаграм</a>
         </section>
         <section class="footer-friends">
-          <h2 class="friends-item">Давайте дружить, это выгодно!</h2>
+          <h2>Давайте дружить, это выгодно!</h2>
           <p>Скидка 10% для друзей из социальных сетей.</p>
         </section>
       </div>
