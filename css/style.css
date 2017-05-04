@@ -26,7 +26,6 @@ body {
 .container {
   width: 1160px;
   padding: 0 20px;
-  /*background-color: red;*/
   margin: 0 auto;
 }
 
@@ -90,7 +89,7 @@ body {
 
 .main-menu a {
   display: block;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 
   color: #000000;
   text-decoration: none;
@@ -148,6 +147,10 @@ body {
   top: 6px;
   left: 46px;
   background: url("../img/cart-icon.png") no-repeat center;
+}
+
+.current-place {
+  border-bottom: 2px solid #fb565a;
 }
 
 .slider {
@@ -263,6 +266,7 @@ body {
 .button {
   display: block;
 
+  font-family: Roboto, sans-serif;
   color: #ffffff;
   font-size: 16px;
   line-height: 18px;
@@ -596,7 +600,7 @@ body {
 
 .contact-us {
   width: 219px;
-  padding: 16px 46px;
+  padding: 16px 40px;
   box-sizing: border-box;
   text-align: center;
   background-color: #fb565a;
@@ -638,6 +642,7 @@ body {
 }
 
 .social-btn {
+  position: relative;
   display: inline-block;
   width: 79px;
   height: 79px;
@@ -648,6 +653,7 @@ body {
   text-decoration: none;
 
   border-radius: 50%;
+  background-color: #e1e1e1;
 }
 
 .social-btn:hover {
@@ -663,23 +669,61 @@ body {
   margin-right: 0;
 }
 
-.social-btn-vk {
-  background: #e1e1e1 url(../img/vk-icon.png) no-repeat center;
+.social-btn-vk i {
+  position: absolute;
+  display: block;
+
+  width: 26px;
+  height: 15px;
+
+  top: 32px;
+  left: 26px;
+
+  background: url("../img/vk-icon.png") no-repeat center;
 }
 
-.social-btn-fb {
-  background: #e1e1e1 url(../img/fb-icon.png) no-repeat center;
+.social-btn-vk:active i {
+  opacity: 0.3;
 }
 
-.social-btn-inst {
-  background: #e1e1e1 url(../img/insta-icon.png) no-repeat center;
+.social-btn-fb i {
+  position: absolute;
+  display: block;
+
+  width: 12px;
+  height: 22px;
+
+  top: 28px;
+  left: 33px;
+
+  background: url("../img/fb-icon.png") no-repeat center;
+}
+
+.social-btn-fb:active i {
+  opacity: 0.3;
+}
+
+.social-btn-inst i {
+  position: absolute;
+  display: block;
+
+  width: 21px;
+  height: 21px;
+
+  top: 29px;
+  left: 28px;
+
+  background: url("../img/insta-icon.png") no-repeat center;
+}
+
+.social-btn-inst:active i {
+  opacity: 0.3;
 }
 
 
 .footer-friends {
   float: left;
   width: 560px;
-  /*background-color: #1dca21;*/
 }
 
 .footer-friends h2 {
@@ -716,6 +760,10 @@ body {
 .catalog-right-column {
   float: right;
   width: 760px;
+}
+
+.filters {
+  font-family: Roboto, sans-serif;
 }
 
  .filters h2 {
