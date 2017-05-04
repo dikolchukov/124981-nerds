@@ -720,6 +720,7 @@ body {
 
  .filters h2 {
   margin: 0;
+  margin-bottom: 52px;
 
   font-size: 18px;
   line-height: 30px;
@@ -729,16 +730,158 @@ body {
  }
 
  .filter-price {
+   width: 260px;
    margin-bottom: 60px;
  }
 
- .filter-grid {
-   margin-bottom: 50px;
- }
+ .range-controls {
+  position: relative;
+  height: 41px;
+  border-radius: 5px;
+  background: #eeeeee;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 100%;
+  height: 2px;
+  background: #00ca74;
+}
+
+.range-controls .bar-control {
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  width: 4px;
+  height: 4px;
+  border: 8px solid #fff;
+  cursor: pointer;
+  border-radius: 50%;
+  background: #ababab;
+  box-shadow: 0 2px 1px 0 #cccdcd;
+}
+
+.range-controls .bar-control-min {
+  left: 20px;
+}
+
+.range-controls .bar-control-max {
+  left: 222px;
+}
+
+.price-controls label {
+  display: inline-block;
+  width: 115px;
+  font-size: 16px;
+}
+
+.min-price {
+  margin-right: 25px;
+}
+
+.price-controls input {
+  font-size: 16px;
+  width: 60px;
+  margin-left: 10px;
+  padding: 8px 10px;
+  text-align: center;
+  color: #283136;
+  border: none;
+  border-radius: 5px;
+  background: #eeeeee;
+  outline: none;
+}
+
+.filter-grid {
+  margin-bottom: 50px;
+}
+
+.filter-grid h2 {
+  margin-bottom: 18px;
+}
+
+.filter-grid label {
+  cursor: pointer;
+  color: #283136;
+}
+
+.filter-grid label:hover {
+  color: #000000;
+}
+
+.filter-grid label::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  width: 25px;
+  height: 25px;
+  background: url("../img/radio-off.png") no-repeat center;
+  opacity: 0.4;
+}
+
+input[name="grid-select"]:checked + label::before {
+  background: url("../img/radio-on.png") no-repeat center;
+  opacity: 1;
+}
+
+input[name="grid-select"]:checked + label {
+  color: #000000;
+}
+
+
+.filter-grid label:hover {
+  color: #000000;
+}
 
  .filter-features {
    margin-bottom: 50px;
- }
+}
+
+.filter-features h2 {
+  margin-bottom: 18px;
+}
+
+.filter-features label {
+  cursor: pointer;
+  color: #283136;
+}
+
+.filter-features label:hover {
+  color: #000000;
+}
+
+.filter-features label::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  width: 23px;
+  height: 23px;
+  background: url("../img/checkbox-off.png") no-repeat center;
+  opacity: 0.4;
+}
+
+.filter-checkbox:checked + label::before {
+  width: 27px;
+  height: 23px;
+  margin-right: 6px;
+  background: url("../img/checkbox-on.png") no-repeat center;
+  opacity: 1;
+}
+
+.filter-checkbox:checked + label {
+  color: #000000;
+}
+
 
  .show-it {
   width: 260px;
@@ -876,7 +1019,7 @@ body {
 }
 
 .catalog-item-hover {
-  /*display: none;*/
+  display: none;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -944,6 +1087,20 @@ body {
   background-color: #d7373b;
   color: rgba(255,255,255,0.3);
 }
+
+.catalog-item:hover .catalog-item-hover,
+.catalog-item-hover:hover {
+  display: block;
+}
+
+.catalog-item:hover::before {
+  opacity: 1;
+}
+
+.catalog-item:hover {
+  box-shadow: 0 7px 8px -2px #cfcfcf;
+}
+
 
 .pages {
   width: 460px;

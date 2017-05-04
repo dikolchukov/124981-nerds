@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс - Магазин</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic-ext" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -38,52 +40,58 @@
             <form class="filters" action="#" method="get">
               <div class="filter-price">
                 <h2>Стоимость:</h2>
-                <input type="range" min="0" max="15000">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="bar-control bar-control-min"></div>
+                  <div class="bar-control bar-control-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">
+                    от <input name="min-price" type="text" value="0">
+                  </label>
+                  <label class="max-price">
+                    до <input name="max-price" type="text" value="15000">
+                  </label>
+                </div>
               </div>
               <div class="filter-grid">
                 <h2>Сетка:</h2>
                 <p>
-                  <label>
-                    <input type="radio" name="grid-select" value="adapt" checked> Адаптивная
-                  </label>
+                  <input type="radio" name="grid-select" id="radio-1" value="adapt" checked hidden>
+                  <label for="radio-1">Адаптивная</label>
                 </p>
                 <p>
-                  <label>
-                    <input type="radio" name="grid-select" value="fix"> Фиксированная
-                  </label>
+                  <input type="radio" name="grid-select" id="radio-2" value="fix" hidden>
+                  <label for="radio-2">Фиксированная</label>
                 </p>
                 <p>
-                  <label>
-                    <input type="radio" name="grid-select" value="rub"> Резиновая
-                  </label>
+                  <input type="radio" name="grid-select" id="radio-3" value="rub" hidden>
+                  <label for="radio-3">Резиновая</label>
                 </p>
               </div>
               <div class="filter-features">
                 <h2>Особенности:</h2>
                 <p>
-                  <label>
-                    <input type="checkbox" name="slider" checked> Слайдер
-                  </label>
+                  <input class="filter-checkbox" type="checkbox" name="slider" id="filt-chbox-1" checked hidden>
+                  <label for="filt-chbox-1">Слайдер</label>
                 </p>
                 <p>
-                  <label>
-                    <input type="checkbox" name="features-block"> Блок преимуществ
-                  </label>
+                  <input class="filter-checkbox" type="checkbox" name="features-block" id="filt-chbox-2" hidden>
+                  <label for="filt-chbox-2">Блок преимуществ</label>
                 </p>
                 <p>
-                  <label>
-                    <input type="checkbox" name="news" checked> Новости
-                  </label>
+                  <input class="filter-checkbox" type="checkbox" name="news" id="filt-chbox-3" checked hidden>
+                  <label for="filt-chbox-3">Новости</label>
                 </p>
                 <p>
-                  <label>
-                    <input type="checkbox" name="gallery"> Галерея
-                  </label>
+                  <input class="filter-checkbox" type="checkbox" name="gallery" id="filt-chbox-4" hidden>
+                  <label for="filt-chbox-4">Галерея</label>
                 </p>
                 <p>
-                  <label>
-                    <input type="checkbox" name="cart"> Корзина
-                  </label>
+                  <input class="filter-checkbox" type="checkbox" name="cart" id="filt-chbox-5" hidden>
+                  <label for="filt-chbox-5">Корзина</label>
                 </p>
               </div>
               <button class="button show-it" type="submit">Показать</button>
@@ -102,7 +110,7 @@
             </div>
             <section class="catalog clearfix">
               <article class="catalog-item">
-                <a href="#"><img src="img/img-sedona.jpg" alt="Sedona" width="360" height="576"></a>
+                <a class="catalog-item-pic" href="#"><img src="img/img-sedona.jpg" alt="Sedona" width="360" height="576"></a>
                 <div class="catalog-item-hover">
                   <h2><a href="#">Sedona</a></h2>
                   <p class="catalog-item-discr">Информационый сайт для туристов</p>
@@ -110,7 +118,7 @@
                 </div>
               </article>
               <article class="catalog-item">
-                <a href="#"><img src="img/img-pink.jpg" alt="Pink"></a>
+                <a class="catalog-item-pic" href="#"><img src="img/img-pink.jpg" alt="Pink"></a>
                 <div class="catalog-item-hover ">
                   <h2><a href="#">Pink App</a></h2>
                   <p class="catalog-item-discr">Продуктовый лендинг приложения для iOS и Android</p>
@@ -118,7 +126,7 @@
                 </div>
               </article>
               <article class="catalog-item">
-                <a href="#"><img src="img/img-barbershop.jpg" alt="Barbershop"></a>
+                <a class="catalog-item-pic" href="#"><img src="img/img-barbershop.jpg" alt="Barbershop"></a>
                 <div class="catalog-item-hover">
                   <h2><a href="#">Barbershop</a></h2>
                   <p class="catalog-item-discr">Сайт салоны красоты. Для мужчин, да.</p>
@@ -126,7 +134,7 @@
                 </div>
               </article>
               <article class="catalog-item">
-                <a href="#"><img src="img/img-mishka.jpg" alt="Mishka"></a>
+                <a class="catalog-item-pic" href="#"><img src="img/img-mishka.jpg" alt="Mishka"></a>
                 <div class="catalog-item-hover">
                   <h2><a href="#">Mishka</a></h2>
                   <p class="catalog-item-discr">Интернет-магазин вязаных игрушек</p>
@@ -134,7 +142,7 @@
                 </div>
               </article>
               <article class="catalog-item">
-                <a href="#"><img src="img/img-aplus.jpg" alt="A Plus"></a>
+                <a class="catalog-item-pic" href="#"><img src="img/img-aplus.jpg" alt="A Plus"></a>
                 <div class="catalog-item-hover">
                   <h2><a href="#">A Plus</a></h2>
                   <p class="catalog-item-discr">Лендинг курсов повышения квалификации</p>
@@ -142,7 +150,7 @@
                 </div>
               </article>
               <article class="catalog-item">
-                <a href="#"><img src="img/img-kvast.jpg" alt="Кваст"></a>
+                <a class="catalog-item-pic" href="#"><img src="img/img-kvast.jpg" alt="Кваст"></a>
                 <div class="catalog-item-hover">
                   <h2><a href="#">Кваст</a></h2>
                   <p class="catalog-item-discr">Промо-сайт производителя крафтового кваса</p>
