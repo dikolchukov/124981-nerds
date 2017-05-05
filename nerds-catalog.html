@@ -187,25 +187,6 @@
           <button class="button contact-us" type="button">Напишите нам</button>
         </div>
       </div>
-      <!--<form class="form-contact hidden-ellement" action="#" method="post">
-            <h2>Напишите нам</h2>
-            <button class="close-btn" type="button">Закрыть</button>
-            <label>
-              Ваше имя:
-              <input name="your-name" type="text" value="Представьтесь, пожалуйста">
-            </label>
-            <label>
-              Ваш e-mail:
-              <input name="e-mail" type="email" value="Для отправки ответа">
-            </label>
-            <label>
-              Текст письма:
-              <textarea name="mail-content">В свободной форме</textarea>
-            </label>
-            <button class="button send-it" type="button">Отправить</button>
-          </form>
-        </section>
-      </div> -->
     </main>
     <footer class="main-footer">
       <div class="container clearfix">
@@ -220,5 +201,24 @@
         </section>
       </div>
     </footer>
+    <div class="modal-content">
+      <button class="close-btn" type="button">Закрыть</button>
+      <form class="form-contact" action="#" method="post">
+        <h2>Напишите нам</h2>
+        <p class="form-name">
+          <label for="type-name">Ваше имя:</label>
+          <input name="your-name" id="type-name" type="text" value="Представьтесь, пожалуйста">
+        </p>
+        <p class="form-e-mail">
+          <label for="type-e-mail">Ваш e-mail:</label>
+          <input name="e-mail" id="type-e-mail" type="email" value="Для отправки ответа">
+        </p>
+        <p class="form-message">
+          <label for="type-message">Текст письма:</label>
+          <textarea name="mail-content" id="type-message" rows="5">В свободной форме</textarea>
+        </p>
+        <input class="button send-it" type="submit" value="Отправить">
+      </form>
+    </div>
   </body>
   </html>
