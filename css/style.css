@@ -589,6 +589,13 @@ body {
   position: relative;
 }
 
+.interactive-map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
 .contacts-field {
   position: absolute;
   left: 140px;
@@ -596,6 +603,7 @@ body {
 
   width: 318px;
   background-color: #ffffff;
+  z-index: 20;
 }
 
 .contacts-field h2 {
@@ -647,7 +655,7 @@ body {
 }
 
 .modal-content {
-  /*display: none;*/
+  display: none;
   position: fixed;
   z-index: 2000;
   width: 960px;
@@ -659,6 +667,10 @@ body {
   padding-left: 100px;
   padding-right: 100px;
   box-shadow: 0 15px 60px -2px #616262;
+}
+
+.modal-content-show {
+  display: block;
 }
 
 .close-btn {
