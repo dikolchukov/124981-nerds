@@ -2,7 +2,7 @@ body {
   min-width: 1200px;
   margin: 0;
 
-  font-family: Roboto, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -150,7 +150,7 @@ body {
 
   top: 6px;
   left: 46px;
-  background: url("../img/cart-icon.png") no-repeat center;
+  background: url("../img/sprite.png") no-repeat -20px -20px;
 }
 
 .current-place {
@@ -197,7 +197,7 @@ body {
 #btn-1:checked ~ .slider-controls label[for="btn-1"],
 #btn-2:checked ~ .slider-controls label[for="btn-2"],
 #btn-3:checked ~ .slider-controls label[for="btn-3"] {
-  background:#c1c1c1;
+  background: #c1c1c1;
 }
 
 .slider-item {
@@ -269,7 +269,7 @@ body {
 .button {
   display: block;
 
-  font-family: Roboto, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   color: #ffffff;
   font-size: 16px;
   line-height: 18px;
@@ -317,7 +317,7 @@ body {
 .features {
   margin-top: 81px;
   margin-bottom: 40px;
-  padding-bottom: 78px;
+  padding-bottom: 85px;
   border-bottom: 2px solid #eeeeee;
 }
 
@@ -479,7 +479,7 @@ body {
   text-transform: uppercase;
 
   margin-top: 25px;
-  margin-bottom: 60px;
+  margin-bottom: 45px;
   margin-left: 18px;
 }
 
@@ -495,10 +495,10 @@ body {
 
 .advantages-title {
   display: block;
-  margin-bottom: 35px;
+  margin-bottom: 20px;
 
   font-size: 45px;
-  line-height: 10px;
+  line-height: 45px;
   font-weight: 700;
   color: #000000;
 }
@@ -680,7 +680,7 @@ body {
   cursor: pointer;
   border: none;
   outline: none;
-  background: url("../img/close-cross.png") no-repeat center;
+  background: url("../img/sprite.png") no-repeat -20px -83px;
 }
 
 .close-btn:hover {
@@ -692,7 +692,7 @@ body {
 }
 
 .form-contact {
-  font-family: Roboto, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   font-size: 0;
 }
 
@@ -709,7 +709,7 @@ body {
 }
 
 .form-contact label {
-  font-family: Roboto, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
@@ -728,7 +728,7 @@ body {
   box-sizing: border-box;
   padding: 15px;
 
-  font-family: Roboto, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
@@ -763,7 +763,7 @@ body {
   margin: 0;
   padding: 15px;
 
-  font-family: Roboto, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
@@ -863,7 +863,7 @@ body {
   top: 32px;
   left: 26px;
 
-  background: url("../img/vk-icon.png") no-repeat center;
+  background: url("../img/sprite.png") no-repeat -182px -150px;
 }
 
 .social-btn-vk:active i {
@@ -880,7 +880,7 @@ body {
   top: 28px;
   left: 33px;
 
-  background: url("../img/fb-icon.png") no-repeat center;
+  background: url("../img/sprite.png") no-repeat -81px -83px;
 }
 
 .social-btn-fb:active i {
@@ -897,7 +897,7 @@ body {
   top: 29px;
   left: 28px;
 
-  background: url("../img/insta-icon.png") no-repeat center;
+  background: url("../img/sprite.png") no-repeat -133px -83px;
 }
 
 .social-btn-inst:active i {
@@ -947,12 +947,12 @@ body {
 }
 
 .filters {
-  font-family: Roboto, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
 }
 
  .filters h2 {
   margin: 0;
-  margin-bottom: 52px;
+  margin-bottom: 45px;
 
   font-size: 18px;
   line-height: 30px;
@@ -963,7 +963,7 @@ body {
 
  .filter-price {
    width: 260px;
-   margin-bottom: 60px;
+   margin-bottom: 58px;
  }
 
  .range-controls {
@@ -1009,20 +1009,26 @@ body {
   left: 222px;
 }
 
+.price-controls{
+  font-size: 0;
+}
+
 .price-controls label {
   display: inline-block;
-  width: 115px;
+  width: 116px;
   font-size: 16px;
+  vertical-align: middle;
+  text-transform: uppercase;
 }
 
 .min-price {
-  margin-right: 25px;
+  margin-right: 26px;
 }
 
 .price-controls input {
   font-size: 16px;
   width: 60px;
-  margin-left: 10px;
+  margin-left: 9px;
   padding: 8px 10px;
   text-align: center;
   color: #283136;
@@ -1033,7 +1039,7 @@ body {
 }
 
 .filter-grid {
-  margin-bottom: 50px;
+  margin-bottom: 35px;
 }
 
 .filter-grid h2 {
@@ -1056,12 +1062,12 @@ body {
   margin-right: 10px;
   width: 25px;
   height: 25px;
-  background: url("../img/radio-off.png") no-repeat center;
+  background: url("../img/sprite.png") no-repeat -205px -20px;
   opacity: 0.4;
 }
 
 input[name="grid-select"]:checked + label::before {
-  background: url("../img/radio-on.png") no-repeat center;
+  background: url("../img/sprite.png") no-repeat -194px -85px;
   opacity: 1;
 }
 
@@ -1083,7 +1089,7 @@ input[name="grid-select"]:disabled + label {
 }
 
  .filter-features {
-   margin-bottom: 50px;
+  margin-bottom: 45px;
 }
 
 .filter-features h2 {
@@ -1106,7 +1112,7 @@ input[name="grid-select"]:disabled + label {
   margin-right: 10px;
   width: 23px;
   height: 23px;
-  background: url("../img/checkbox-off.png") no-repeat center;
+  background: url("../img/sprite.png") no-repeat -75px -20px;
   opacity: 0.4;
 }
 
@@ -1114,7 +1120,7 @@ input[name="grid-select"]:disabled + label {
   width: 27px;
   height: 23px;
   margin-right: 6px;
-  background: url("../img/checkbox-on.png") no-repeat center;
+  background: url("../img/sprite.png") no-repeat -138px -20px;
   opacity: 1;
 }
 
@@ -1197,7 +1203,7 @@ input[name="grid-select"]:disabled + label {
   margin: 0;
   margin-right: 20px;
   vertical-align: middle;
-  background: url("../img/max-min-btn.png") no-repeat 0 top;
+  background: url("../img/sprite.png") no-repeat -20px -144px;
   opacity: 0.3;
 }
 
@@ -1207,7 +1213,7 @@ input[name="grid-select"]:disabled + label {
   height: 9px;
   margin: 0;
   vertical-align: middle;
-  background: url("../img/min-max-btn.png") no-repeat 0 top;
+  background: url("../img/sprite.png") no-repeat -133px -144px;
   opacity: 0.3;
 }
 
@@ -1272,6 +1278,7 @@ input[name="grid-select"]:disabled + label {
   background-color: #eeeeee;
   padding-top: 1px;
   padding-bottom: 1px;
+  cursor: pointer;
 }
 
 .catalog-item-hover h2 {
@@ -1347,7 +1354,7 @@ input[name="grid-select"]:disabled + label {
 
 .pages {
   width: 460px;
-  margin-bottom: 60px;
+  margin-bottom: 55px;
 }
 
 .pages ul {
@@ -1376,7 +1383,6 @@ input[name="grid-select"]:disabled + label {
 
 .pages a {
   display: block;
-  /*padding-bottom: 10px;*/
 
 
   color: #000000;
@@ -1392,7 +1398,7 @@ input[name="grid-select"]:disabled + label {
   text-align: center;
   vertical-align: middle;
 
-  font-family: Roboto, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
@@ -1416,7 +1422,7 @@ input[name="grid-select"]:disabled + label {
   background-color: #eeeeee;
   border-radius: 3px;
 
-  font-family: Roboto, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
