@@ -5,7 +5,7 @@
     <title>HTML Academy: Нёрдс - Магазин</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic-ext" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -101,10 +101,10 @@
             <div class="sort clearfix">
               <h2>Сортировать:</h2>
               <div class="sort-nav">
-                <button class="sort-btn by-price" type="button">По цене</button>
+                <button class="sort-btn by-price sort-btn-current" type="button">По цене</button>
                 <button class="sort-btn by-type" type="button">По типу</button>
                 <button class="sort-btn by-title" type="button">По названию</button>
-                <button class="sort-btn btn-decrease" type="button">По убыванию</button>
+                <button class="sort-btn btn-decrease sort-btn-current" type="button">По убыванию</button>
                 <button class="sort-btn btn-increase" type="button">По возрастанию</button>
               </div>
             </div>
@@ -186,7 +186,7 @@
           <p>191186, Санкт-Петербург,<br>
         ул. Б. Конюшенная, д. 19/8</p>
           <p>тел. +7 (812) 275-75-75</p>
-          <button class="button contact-us" type="button">Напишите нам</button>
+          <a href="writeus.html" class="button contact-us">Напишите нам</a>
         </div>
       </div>
     </main>
@@ -222,20 +222,7 @@
         <input class="button send-it" type="submit" value="Отправить">
       </form>
     </div>
-    <script>
-      var link = document.querySelector(".contact-us");
-      var popup = document.querySelector(".modal-content");
-      var close = popup.querySelector(".close-btn");
-
-      link.addEventListener("click", function(event) {
-        event.preventDefault();
-        popup.classList.add("modal-content-show");
-      });
-
-      close.addEventListener("click", function(event) {
-        event.preventDefault();
-        popup.classList.remove("modal-content-show");
-      });
+    <script src="js/scripts.min.js">
     </script>
   </body>
 </html>

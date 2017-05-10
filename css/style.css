@@ -1229,6 +1229,13 @@ input[name="grid-select"]:disabled + label {
   opacity: 1;
 }
 
+.sort-btn-current,
+.sort-btn-current:hover,
+.sort-btn-current:active {
+  opacity: 1;
+  cursor: default;
+}
+
 .catalog {
   width: 760px;
   margin-bottom: 60px;
