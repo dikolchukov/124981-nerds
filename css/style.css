@@ -113,7 +113,6 @@ body {
   float: right;
   margin-top: 74px;
 
-
   max-width: 160px;
 }
 
@@ -122,7 +121,6 @@ body {
   vertical-align: top;
   padding-left: 86px;
   position: relative;
-
 
   font-size: 16px;
   line-height: 30px;
@@ -146,7 +144,6 @@ body {
   position: absolute;
   width: 15px;
   height: 15px;
-
 
   top: 6px;
   left: 46px;
@@ -259,9 +256,11 @@ body {
 #btn-1:checked ~ .slides .slider-item:nth-child(1) {
   display: block;
 }
+
 #btn-2:checked ~ .slides .slider-item:nth-child(2) {
   display: block;
 }
+
 #btn-3:checked ~ .slides .slider-item:nth-child(3) {
   display: block;
 }
@@ -331,7 +330,7 @@ body {
   margin-right: 0;
 }
 
-.feature-cite {
+.feature-site {
   background: url("../img/feature-1.jpg") no-repeat 0 0;
 }
 
@@ -353,7 +352,7 @@ body {
   margin-bottom: 30px;
 }
 
-.btn-cite {
+.btn-site {
   width: 160px;
   padding: 16px 39px;
   text-align: center;
@@ -361,11 +360,11 @@ body {
   background-color: #fb565a;
 }
 
-.btn-cite:hover {
+.btn-site:hover {
   background-color: #e74246;
 }
 
-.btn-cite:active {
+.btn-site:active {
   box-shadow: inset 0 3px 0 0 #c13135;
   background-color: #d7373b;
   color: rgba(255,255,255,0.3);
@@ -388,7 +387,6 @@ body {
   background-color: #00aa62;
   color: rgba(255,255,255,0.3);
 }
-
 
 .btn-present {
   width: 160px;
@@ -485,8 +483,9 @@ body {
 
 .advantages-item {
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 15px;
   width: 100px;
+  vertical-align: middle;
 }
 
 .advantages-item:last-child {
@@ -681,10 +680,11 @@ body {
   border: none;
   outline: none;
   background: url("../img/sprite.png") no-repeat -20px -83px;
+  opacity: 0.3;
 }
 
 .close-btn:hover {
-  opacity: 0.3;
+  opacity: 1;
 }
 
 .close-btn:active {
@@ -717,12 +717,15 @@ body {
   margin-bottom: 10px;
 }
 
-.form-name, .form-e-mail {
+.form-name,
+.form-e-mail {
   display: inline-block;
   width: 360px;
+  vertical-align: middle;
 }
 
-.form-name input, .form-e-mail input {
+.form-name input,
+.form-e-mail input {
   width: 360px;
   margin: 0;
   box-sizing: border-box;
@@ -775,12 +778,14 @@ body {
   border-radius: 5px;
 }
 
-.form-name input:hover, .form-e-mail input:hover,
+.form-name input:hover,
+.form-e-mail input:hover,
 .form-message textarea:hover {
   border: 2px solid #b4b9bb;
 }
 
-.form-name input:focus, .form-e-mail input:focus,
+.form-name input:focus,
+.form-e-mail input:focus,
 .form-message textarea:focus {
   border: 2px solid #000000;
   color: rgba(68,68,68,1)
@@ -904,7 +909,6 @@ body {
   opacity: 0.3;
 }
 
-
 .footer-friends {
   float: left;
   width: 560px;
@@ -950,7 +954,7 @@ body {
   font-family: Roboto, Arial, sans-serif;
 }
 
- .filters h2 {
+.filters h2 {
   margin: 0;
   margin-bottom: 45px;
 
@@ -959,14 +963,14 @@ body {
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
- }
+}
 
- .filter-price {
-   width: 260px;
-   margin-bottom: 58px;
- }
+.filter-price {
+  width: 260px;
+  margin-bottom: 58px;
+}
 
- .range-controls {
+.range-controls {
   position: relative;
   height: 41px;
   border-radius: 5px;
@@ -1009,7 +1013,7 @@ body {
   left: 222px;
 }
 
-.price-controls{
+.price-controls {
   font-size: 0;
 }
 
@@ -1049,6 +1053,9 @@ body {
 .filter-grid label {
   cursor: pointer;
   color: #283136;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
 }
 
 .filter-grid label:hover {
@@ -1066,13 +1073,12 @@ body {
   opacity: 0.4;
 }
 
-input[name="grid-select"]:checked + label::before {
-  background: url("../img/sprite.png") no-repeat -194px -85px;
+.filter-grid label:hover::before {
   opacity: 1;
 }
 
-input[name="grid-select"]:checked + label {
-  color: #000000;
+input[name="grid-select"]:checked + label::before {
+  background: url("../img/sprite.png") no-repeat -194px -85px;
 }
 
 input[name="grid-select"]:disabled + label::before {
@@ -1088,7 +1094,7 @@ input[name="grid-select"]:disabled + label {
   color: #000000;
 }
 
- .filter-features {
+.filter-features {
   margin-bottom: 45px;
 }
 
@@ -1099,10 +1105,9 @@ input[name="grid-select"]:disabled + label {
 .filter-features label {
   cursor: pointer;
   color: #283136;
-}
-
-.filter-features label:hover {
-  color: #000000;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
 }
 
 .filter-features label::before {
@@ -1121,18 +1126,17 @@ input[name="grid-select"]:disabled + label {
   height: 23px;
   margin-right: 6px;
   background: url("../img/sprite.png") no-repeat -138px -20px;
-  opacity: 1;
-}
-
-.filter-checkbox:checked + label {
-  color: #000000;
 }
 
 .filters input:disabled {
   opacity: 0.1;
 }
 
- .show-it {
+.filter-features label:hover::before {
+  opacity: 1;
+}
+
+.show-it {
   width: 260px;
   box-sizing: border-box;
   padding: 17px 88px 15px;
@@ -1140,21 +1144,21 @@ input[name="grid-select"]:disabled + label {
   color: #000000;
   font-weight: 500;
   outline: none;
- }
+}
 
 .show-it:hover {
   background-color: #dfdfdf;
- }
+}
 
- .show-it:active {
+.show-it:active {
   box-shadow: inset 0 3px 0 0 #bfbfbf;
   background-color: #d5d5d5;
   color: rgba(0,0,0,0.3);
- }
+}
 
 .sort {
   margin-bottom: 56px;
- }
+}
 
 .sort h2 {
   float: left;
@@ -1165,7 +1169,7 @@ input[name="grid-select"]:disabled + label {
   line-height: 18px;
   font-weight: 700;
   text-transform: uppercase;
- }
+}
 
 .sort-nav {
   float: right;
@@ -1257,7 +1261,6 @@ input[name="grid-select"]:disabled + label {
   position: absolute;
   width: 360px;
   height: 40px;
-
 
   top: 0;
   left: 0;
@@ -1358,7 +1361,6 @@ input[name="grid-select"]:disabled + label {
   box-shadow: 0 7px 8px -2px #cfcfcf;
 }
 
-
 .pages {
   width: 460px;
   margin-bottom: 55px;
@@ -1391,7 +1393,6 @@ input[name="grid-select"]:disabled + label {
 .pages a {
   display: block;
 
-
   color: #000000;
   text-decoration: none;
 }
@@ -1414,9 +1415,9 @@ input[name="grid-select"]:disabled + label {
 
 .page-btn:hover {
   background-color: #dfdfdf;
- }
+}
 
- .page-btn:active {
+.page-btn:active {
   box-shadow: inset 0 3px 0 0 #bfbfbf;
   background-color: #d5d5d5;
   color: rgba(0,0,0,0.3);
@@ -1438,13 +1439,13 @@ input[name="grid-select"]:disabled + label {
 
 .page-btn-next:hover {
   background-color: #dfdfdf;
- }
+}
 
  .page-btn-next:active {
   box-shadow: inset 0 3px 0 0 #bfbfbf;
   background-color: #d5d5d5;
   color: rgba(0,0,0,0.3);
- }
+}
 
 .current-page {
   width: 50px;
