@@ -582,6 +582,8 @@ body {
 
 .map {
   position: relative;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .interactive-map {
@@ -593,7 +595,7 @@ body {
 
 .contacts-field {
   position: absolute;
-  left: 140px;
+  left: 20px;
   top: 54px;
 
   width: 318px;
@@ -1323,7 +1325,7 @@ input[name="grid-select"]:disabled + label {
 
 .catalog-item-hover p {
   width: 240px;
-  max-height: 250px;
+  max-height: 40px;
   margin: 0 auto;
   margin-bottom: 28px;
   text-align: center;
