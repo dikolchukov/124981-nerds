@@ -1482,3 +1482,18 @@ input[name="grid-select"]:disabled + label {
   box-shadow: none;
   color: #000000;
 }
+
+@keyframes transparency {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.animation-popup {
+  animation-name: transparency;
+  animation-duration: 1s;
+}
