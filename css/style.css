@@ -1315,7 +1315,7 @@ input[name="grid-select"]:disabled + label {
   margin-bottom: 20px;
 
   text-align: center;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .catalog-item-hover a {
@@ -1329,7 +1329,7 @@ input[name="grid-select"]:disabled + label {
   margin: 0 auto;
   margin-bottom: 28px;
   text-align: center;
-  overflow-y: scroll;
+  overflow-y: auto;
 
   font-size: 16px;
   line-height: 18px;
@@ -1435,7 +1435,7 @@ input[name="grid-select"]:disabled + label {
   box-shadow: inset 0 3px 0 0 #bfbfbf;
   background-color: #d5d5d5;
   color: rgba(0,0,0,0.3);
- }
+}
 
 .page-btn-next {
   width: 260px;
