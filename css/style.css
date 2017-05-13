@@ -1329,7 +1329,7 @@ input[name="grid-select"]:disabled + label {
   margin: 0 auto;
   margin-bottom: 28px;
   text-align: center;
-  overflow: scroll;
+  overflow-y: scroll;
 
   font-size: 16px;
   line-height: 18px;
